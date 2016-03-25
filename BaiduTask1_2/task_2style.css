@@ -1,0 +1,171 @@
+
+*{margin:0;padding:0;}
+
+/*主体*/
+body {
+    background:#dedede;
+
+}
+/*导航*/
+nav {
+    min-width:1400px;
+    height: 60px;
+    font-family:"microsoft YAHEI";
+    font-size:15px;
+    font-color:#000000;
+    background-size:150px;
+    background-position:40px 5px;
+    background-repeat:no-repeat;
+    background-color:#333333;
+    background-image:url(./image/baidu1.png);
+}
+nav ul{
+    float:right;
+}
+nav li{
+    padding-right:40px;
+    line-height:60px;
+    float:left;
+}
+nav a{
+    color:#fff;
+}
+nav a:hover{
+    color:#dddddd;
+}
+/*主体文章*/
+main{
+    margin:0 auto;
+    max-width:1248px;
+    font-family:Times new roman,"Microsoft Yahei";
+    font-color:#000000;
+}
+#first,#second img{
+    width:255px;
+}
+#third img{
+    width:120px;
+}
+article {
+    margin:20px;
+    padding:40px 20px;
+    background-color:#fff;
+    border:3px solid #cbcbcb;
+}
+
+article p{
+    line-height:30px;
+    margin-top:10px;
+    font-size:16px;
+    letter-spacing:2px;
+    text-indent:2em;
+    text-justify:auto;
+}
+article ul{
+    margin-top:10px;
+    padding-left:40px;
+    list-style-type: none;
+}
+article ol{
+    margin-top:10px;
+    font-weight:bold;
+    padding-left:40px;
+    line-height:25px;
+}
+h1{
+    line-height:45px;
+}
+article h3 {
+    color:#6d5f80;
+    line-height:30px;
+}
+.mark{
+    color:#6d5f80;
+    text-indent:0;
+    line-height:18px;
+}
+figure{
+    text-align:center;
+    width:120px;
+    margin-top:20px;
+    margin-left:60px;
+    padding:20px;
+    border:1px solid #cecece;
+}
+
+table{
+    text-align:left;
+    width:100%;
+    border:1px solid;
+    border-color:grey;
+    border-spacing:1px;
+    border-collapse:separate;
+}
+#tr1 {
+    color: white;
+    background-color: #333333;
+}
+#tr2{
+    font-weight:bold;
+    background-color:#cccccc;
+}
+aside label{
+    width:30%;}
+aside{
+    margin:auto;
+    margin-bottom:20px;
+    padding:20px;
+    width:1150px;
+    background:#ffffff;
+    font-size:15px;
+}
+aside form h3{
+    line-height:45px;
+}
+aside textarea{
+    width: 60%;
+}
+
+aside .title{
+    width:30%;
+    display:inline-block;
+    text-align:right;
+    margin-top:10px;
+}
+aside p{color:#969b9e;}
+aside .info{
+    margin-left:30px;
+    display:inline-block;
+    vertical-align:text-top;
+    text-align:left;
+}
+.hint{
+    line-height:30px;
+}
+aside textarea{
+    margin-bottom:20px;
+    width:760px;
+    height:100px;
+}
+aside #sub{
+    width:100%;
+    height:45px;
+    border-radius:10px;
+    background-color:#3355d0;
+    text-align:center;
+    line-height:45px;
+    color:white;
+    font-family:宋体;
+    font-size:20px;
+    font-weight:bold;
+}
+
+footer{
+    height:65px;
+    background-color:#000000;
+}
+footer p{
+    color:white;
+    line-height:65px;
+    text-align:center;
+}

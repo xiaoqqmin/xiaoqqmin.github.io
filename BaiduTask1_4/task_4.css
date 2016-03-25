@@ -1,0 +1,43 @@
+div{
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-top:-100px;
+    margin-left:-200px;
+    width:400px;
+    height:200px;
+    background:#ccc;
+    overflow:hidden;
+
+}
+
+#circle1{
+    width:100px;
+    height:100px;
+    border-radius: 50px;
+    background:#fc0;
+    position:absolute;
+    left:0;
+    top:0;
+    margin-top:-50px;
+    margin-left:-50px;
+    padding:0;
+
+}
+
+
+#circle2{
+    width: 100px;
+    height: 100px;
+    background:#fc0;
+    border-radius: 50px;
+    position:absolute;
+    right:0;
+    bottom:0;
+    margin-top:auto;
+    margin-left:auto;
+    margin-right:-50px;
+    margin-bottom:-50px;
+
+
+}
