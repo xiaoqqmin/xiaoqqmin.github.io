@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            font-size: 14px;
+            font-family: "微软雅黑", Veranda;
+        }
+        main{
+            width: 500px;
+            margin:50px 0 0 50px;
+        }
+        label{
+            margin-right: 10px;
+        }
+        input[type="text"]{
+            border-radius: 5px;
+            border: 1px solid #aaa;
+            outline:0;
+            padding: 6px 12px;
+
+        }
+        input[type="text"]:focus{
+            border-radius: 5px;
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+            border-color: #66afe9;
+        }
+        input[type="button"]{
+            background-color: #2563AD;
+            border: none;
+            height: 35px;
+            color: #fff;
+            border-radius: 5px;
+            padding: 6px 12px;
+            outline:0;
+        }
+
+        #info{
+            font-size: 12px;
+            color: #999;
+            margin:5px 0 0 0;
+        }
+
+        .group{
+            display: inline-block;
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <label for="name">名称</label>
+    <div class="group">
+        <input id="name" type="text" onclick=""/>
+        <p id="info">必填，长度为4~16个字符</p>
+    </div>
+    <input id="validate" type="button" value="验证" onclick="Validate()"/>
+
+</main>
+<script src="js/task.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+main{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+
+    /*space-between：伸缩项目会平均地分布在行里。第一个伸缩项目一行中的最开始位置，最后一个伸缩项目在一行中最终点位置。*/
+    justify-content:space-between;
+    align-items: center;
+
+    /*多行显示*/
+    flex-wrap: wrap;
+}
+
+div{
+    margin: 20px 0;
+    width: 150px;
+    border: 1px #f00 solid;
+}
+
+.item1{
+    height: 120px;
+}
+
+.item2{
+    height: 100px;
+}
+
+.item3{
+    height: 40px;
+}
+
+.item4{
+    height: 200px;
+    border: 1px #00f solid;
+}
+
+@media all and (max-width:640px){
+    main{
+        align-items: flex-start;
+    }
+
+    .item4{
+        /*将第四个框提升到第一个*/
+        order: -1;
+    }
+
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>行星与飞船</title>
+    <link rel="stylesheet" href="css/main.css"/>
+
+</head>
+<body>
+    <!--控制面板-->
+    <div id="control">
+        <div class="title">控制面板</div>
+        <div class="main">
+            <div data-id="0">
+
+                <input type="button" data-cmd="Create" value="创造飞船"/>
+            </div>
+            <div data-id=1 id="control1">
+                <span>1号飞船</span>
+                <input type="button" data-cmd="Destroy" value="销毁飞船"/>
+                <input type="button" data-cmd="Start" value="开始飞行"/>
+                <input type="button" data-cmd="Stop" value="停止飞行"/>
+            </div>
+            <div data-id=2 id="control2">
+                <span>2号飞船</span>
+                <input type="button" data-cmd="Destroy" value="销毁飞船"/>
+                <input type="button" data-cmd="Start" value="开始飞行"/>
+                <input type="button" data-cmd="Stop" value="停止飞行"/>
+            </div>
+            <div data-id=3 id="control3">
+                <span>3号飞船</span>
+                <input type="button" data-cmd="Destroy" value="销毁飞船"/>
+                <input type="button" data-cmd="Start" value="开始飞行"/>
+                <input type="button" data-cmd="Stop" value="停止飞行"/>
+            </div>
+            <div data-id=4 id="control4">
+                <span>4号飞船</span>
+                <input type="button" data-cmd="Destroy" value="销毁飞船"/>
+                <input type="button" data-cmd="Start" value="开始飞行"/>
+                <input type="button" data-cmd="Stop" value="停止飞行"/>
+            </div>
+        </div>
+    </div>
+    <!--命令面板-->
+    <div id="console">
+        <div class="title">命令面板</div>
+        <div id="log">
+
+        </div>
+    </div>
+    <div id="planet" class="circle"></div>
+    <div id="spaceship1" class="circle spaceship">
+        <div>
+            <p>1号-100%</p>
+            <div class="mask"></div>
+        </div>
+
+    </div>
+    <div id="spaceship2" class="circle spaceship">
+        <div>
+            <p>2号-100%</p>
+            <div class="mask"></div>
+        </div>
+    </div>
+    <div id="spaceship3" class="circle spaceship">
+        <div>
+            <p>3号-100%</p>
+            <div class="mask"></div>
+        </div>
+    </div>
+    <div id="spaceship4" class="circle spaceship">
+        <div>
+            <p>4号-100%</p>
+            <div class="mask"></div>
+        </div>
+    </div>
+
+</body>
+
+<script src="./js/SpaceShip.js"></script>
+<script src="./js/Commander.js"></script>
+<script src="./js/Mediator.js"></script>
+<script src="./js/Util.js"></script>
+<script src="./js/Main.js"></script>
+</html>

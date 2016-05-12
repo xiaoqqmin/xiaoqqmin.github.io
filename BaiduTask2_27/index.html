@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>行星与飞船</title>
+    <link rel="stylesheet" href="css/main.css"/>
+
+</head>
+<body>
+    <!--控制面板-->
+    <div id="control">
+        <div class="title">控制面板</div>
+        <div class="main">
+            <div class="PowerSystem">
+                <label>动力系统选择：</label>
+                <input type="radio" data-speed="3" data-consume="0.5" name="PowerSystem" value="PS1" checked><span>前进号（速率30px/s,能耗5%/s）</span>
+                <input type="radio" data-speed="5" data-consume="0.7" name="PowerSystem" value="PS2"><span>奔腾号（速率50px/s,能耗7%/s）</span>
+                <input type="radio" data-speed="8" data-consume="0.9" name="PowerSystem" value="PS3"><span>超越号（速率80px/s,能耗9%/s）</span>
+            </div>
+            <div class="EnergySystem">
+                <label>能源系统选择：</label>
+                <input type="radio" data-supplyRate="0.2" name="EnergySystem" value="ES1" checked><span>劲量型（补充能源速度2%/s）</span>
+                <input type="radio" data-supplyRate="0.3" name="EnergySystem" value="ES2"><span>光能型（补充能源速度3%/s）</span>
+                <input type="radio" data-supplyRate="0.4" name="EnergySystem" value="ES3"><span>永久型（补充能源速度4%/s）</span>
+            </div>
+            <div data-id="0">
+                <input type="button" data-cmd="Create" value="创造飞船"/>
+            </div>
+            <div data-id=1 id="control1">
+                <span>1号飞船</span>
+                <input type="button" data-cmd="Destroy" value="销毁飞船"/>
+                <input type="button" data-cmd="Start" value="开始飞行"/>
+                <input type="button" data-cmd="Stop" value="停止飞行"/>
+            </div>
+            <div data-id=2 id="control2">
+                <span>2号飞船</span>
+                <input type="button" data-cmd="Destroy" value="销毁飞船"/>
+                <input type="button" data-cmd="Start" value="开始飞行"/>
+                <input type="button" data-cmd="Stop" value="停止飞行"/>
+            </div>
+            <div data-id=3 id="control3">
+                <span>3号飞船</span>
+                <input type="button" data-cmd="Destroy" value="销毁飞船"/>
+                <input type="button" data-cmd="Start" value="开始飞行"/>
+                <input type="button" data-cmd="Stop" value="停止飞行"/>
+            </div>
+            <div data-id=4 id="control4">
+                <span>4号飞船</span>
+                <input type="button" data-cmd="Destroy" value="销毁飞船"/>
+                <input type="button" data-cmd="Start" value="开始飞行"/>
+                <input type="button" data-cmd="Stop" value="停止飞行"/>
+            </div>
+        </div>
+    </div>
+    <!--命令面板-->
+    <div id="console">
+        <div class="title">命令面板</div>
+        <div id="log">
+
+        </div>
+    </div>
+    <div id="planet" class="circle"></div>
+    <div id="spaceship1" class="circle spaceship">
+        <div>
+            <p>1号-100%</p>
+            <div class="mask"></div>
+        </div>
+
+    </div>
+    <div id="spaceship2" class="circle spaceship">
+        <div>
+            <p>2号-100%</p>
+            <div class="mask"></div>
+        </div>
+    </div>
+    <div id="spaceship3" class="circle spaceship">
+        <div>
+            <p>3号-100%</p>
+            <div class="mask"></div>
+        </div>
+    </div>
+    <div id="spaceship4" class="circle spaceship">
+        <div>
+            <p>4号-100%</p>
+            <div class="mask"></div>
+        </div>
+    </div>
+
+</body>
+<script src="./js/Util.js"></script>
+<script src="./js/Adapter.js"></script>
+<script src="./js/SpaceShip.js"></script>
+<script src="./js/SpaceShip2.js"></script>
+<script src="./js/Commander.js"></script>
+<script src="./js/Mediator.js"></script>
+<script src="./js/BUS.js"></script>
+<script src="./js/Main.js"></script>
+</html>

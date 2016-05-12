@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+/*布局*/
+body{
+    background-color:#FFFFFF;
+}
+main{
+    width:100%;
+    margin:0 auto;
+    background:#FFFFFF;
+    overflow:hidden;
+}
+nav{
+    height:60px;
+    border:1px solid red;
+}
+#top{
+    height:800px;
+    margin-top:20px;
+}
+#left{
+    float:left;
+    height:500px;
+    width:820px;
+    margin-top:20px;
+    border:1px solid red;
+}
+#right{
+    float:left;
+    height:500px;
+    width:750px;
+    margin-top:20px;
+    margin-left:25px;
+    border:1px solid red;
+}
+/*清楚浮动*/
+.clear{
+    clear:both;
+}
+footer{
+    height:50px;
+    margin-top:20px;
+    border:1px solid red;
+}
+
+/*元素*/
+/*展示地图*/
+#map{
+    height:800px;
+    margin:0 auto;
+}

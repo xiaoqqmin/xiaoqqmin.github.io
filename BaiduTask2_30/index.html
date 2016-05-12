@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css"/>
+</head>
+<body>
+<main>
+    <div class="form-group">
+        <label for="name">名称*</label>
+        <div class="input-group">
+            <input id="name" type="text" data-type='name' data-tiptext = '必填，长度为4~16个字符'/>
+            <p class="info"></p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="password">密码*</label>
+        <div class="input-group">
+            <input id="password" type="password" data-type='password' data-tiptext = '必填，必须是英文字母和数字，且长度在8~20之间'/>
+            <p class="info"></p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="repassword">密码确认*</label>
+        <div class="input-group">
+            <input id="repassword" type="password" data-type='repassword' data-compare = "password" data-tiptext = '必填，必须与密码一致'/>
+            <p class="info"></p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="email">邮箱</label>
+        <div class="input-group">
+            <input id="email" type="text" data-type="email" data-tiptext = '非必填，exmaple@*.*'/>
+            <p class="info"></p>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="mobile">手机</label>
+        <div class="input-group">
+            <input id="mobile" type="text" data-type="mobile"   data-tiptext = '非必填，请输入手机号码'/>
+            <p class="info"></p>
+        </div>
+    </div>
+    <input id="validate" type="button" value="验证"/>
+
+
+</main>
+<script src="js/Util.js"></script>
+<script src="js/ValControl.js"></script>
+<script src="js/Validator.js"></script>
+<script src="js/Main.js"></script>
+</body>
+</html>
